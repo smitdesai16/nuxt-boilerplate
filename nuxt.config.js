@@ -27,6 +27,7 @@ export default {
 		'@nuxtjs/stylelint-module'
 	],
 	modules: [
+		'@nuxtjs/pwa',
 		'@nuxtjs/robots',
 		'@nuxtjs/sitemap'
 	],

@@ -30,7 +30,8 @@ export default {
 		'@nuxtjs/pwa',
 		'@nuxtjs/robots',
 		'@nuxtjs/sitemap',
-		'@nuxtjs/axios'
+		'@nuxtjs/axios',
+		'@nuxtjs/dotenv'
 	],
 	build: {
 		extend() {
@@ -52,5 +53,8 @@ export default {
 		]
 	},
 	axios: {
+	},
+	env: {
+		DEMO: 'data'
 	}
 }

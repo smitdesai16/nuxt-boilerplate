@@ -23,7 +23,8 @@ export default {
 		'@nuxtjs/stylelint-module'
 	],
 	modules: [
-		'@nuxtjs/robots'
+		'@nuxtjs/robots',
+		'@nuxtjs/sitemap'
 	],
 	build: {
 		extend() {
@@ -32,6 +33,16 @@ export default {
 	robots: [
 		{ UserAgent: '*' },
 		{ Disallow: '' },
-		{ Sitemap: 'https://www.google.com' }
-	]
+		{ Sitemap: 'http://localhost:3000/sitemap.xml' }
+	],
+	sitemap: {
+		routes: [
+			{
+				url: '/',
+				changefreq: 'daily',
+				priority: 1,
+				lastmod: '2020-03-22T13:30:00.000Z'
+			}
+		]
+	}
 }

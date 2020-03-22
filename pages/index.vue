@@ -5,7 +5,6 @@
 				<h1>
 					Index
 				</h1>
-				<img v-lazy="'https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg'" class="img-fluid">
 			</div>
 		</div>
 	</div>

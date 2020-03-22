@@ -23,9 +23,15 @@ export default {
 		'@nuxtjs/stylelint-module'
 	],
 	modules: [
+		'@nuxtjs/robots'
 	],
 	build: {
 		extend() {
 		}
-	}
+	},
+	robots: [
+		{ UserAgent: '*' },
+		{ Disallow: '' },
+		{ Sitemap: 'https://www.google.com' }
+	]
 }

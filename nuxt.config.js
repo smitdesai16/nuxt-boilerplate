@@ -20,6 +20,7 @@ export default {
 		'~/node_modules/bootstrap/dist/css/bootstrap.min.css'
 	],
 	plugins: [
+		'@/plugins/vue_lazyload'
 	],
 	buildModules: [
 		'@nuxt/typescript-build',

@@ -1,4 +1,4 @@
-import { Vue } from 'vue-property-decorator'
+import { Vue } from 'nuxt-property-decorator'
 import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload, {

@@ -4,11 +4,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<button @click="fetchSomething">
-					Click
-				</button>
 				<h1>
-					Index : {{ ip }}
+					About
 				</h1>
 			</div>
 		</div>
@@ -19,17 +16,6 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
-export default class IndexPage extends Vue {
-	ip: string = ''
-
-	asyncData() {
-		console.log('demo')
-	}
-
-	async fetchSomething() {
-		debugger
-		const ip = await this.$axios.$get('http://icanhazip.com')
-		this.ip = ip
-	}
+export default class AboutPage extends Vue {
 }
 </script>

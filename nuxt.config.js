@@ -29,7 +29,8 @@ export default {
 	modules: [
 		'@nuxtjs/pwa',
 		'@nuxtjs/robots',
-		'@nuxtjs/sitemap'
+		'@nuxtjs/sitemap',
+		'@nuxtjs/axios'
 	],
 	build: {
 		extend() {
@@ -49,5 +50,7 @@ export default {
 				lastmod: '2020-03-22T13:30:00.000Z'
 			}
 		]
+	},
+	axios: {
 	}
 }

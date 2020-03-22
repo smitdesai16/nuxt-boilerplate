@@ -10,7 +10,10 @@ export default {
 		],
 		link: [
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-		]
+		],
+		htmlAttrs: {
+			lang: 'en'
+		}
 	},
 	loading: { color: '#fff' },
 	css: [

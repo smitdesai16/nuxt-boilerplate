@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<button @click="fetchSomething">
+				<button>
 					Click
 				</button>
 				<h1>
@@ -20,16 +20,9 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
 export default class IndexPage extends Vue {
-	ip: string = ''
-
-	asyncData() {
-		console.log('demo')
-	}
-
-	async fetchSomething() {
-		debugger
-		const ip = await this.$axios.$get('http://icanhazip.com')
-		this.ip = ip
+	async asyncData({ $axios } : { $axios: any; }) {
+		const ip = await $axios.$get('http://icanhazip.com')
+		return { ip }
 	}
 }
 </script>

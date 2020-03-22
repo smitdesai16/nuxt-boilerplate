@@ -12,6 +12,7 @@ module.exports = {
   rules: {
 	'no-tabs': ['error', { allowIndentationTabs: true }],
 	'vue/html-indent': ['error', 'tab'],
-	'indent': ['error', 'tab']
+	'indent': ['error', 'tab'],
+	'space-before-function-paren': ['error', 'never']
   }
 }

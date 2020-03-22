@@ -25,7 +25,7 @@ export default {
 	modules: [
 	],
 	build: {
-		extend () {
+		extend() {
 		}
 	}
 }

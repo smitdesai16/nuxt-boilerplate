@@ -18,7 +18,7 @@ export default {
 	loading: { color: '#fff' },
 	css: [
 		'~/node_modules/bootstrap/dist/css/bootstrap.min.css',
-		'~/assets/css/fonts.css'
+		'~/assets/scss/fonts.scss'
 	],
 	plugins: [
 		'@/plugins/vue_lazyload'
@@ -33,7 +33,8 @@ export default {
 		'@nuxtjs/sitemap',
 		'@nuxtjs/axios',
 		'@nuxtjs/dotenv',
-		'nuxt-webfontloader'
+		'nuxt-webfontloader',
+		'@nuxtjs/style-resources'
 	],
 	build: {
 		extend() {
@@ -63,5 +64,8 @@ export default {
 		google: {
 			families: ['Barlow:600', 'Open Sans:400&display=swap']
 		}
+	},
+	styleResources: {
+		scss: ['assets/scss/colors.scss']
 	}
 }

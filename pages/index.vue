@@ -26,3 +26,9 @@ export default class IndexPage extends Vue {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+h1 {
+	color: $primaryColor;
+}
+</style>

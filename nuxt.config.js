@@ -15,7 +15,7 @@ export default {
 			lang: 'en'
 		}
 	},
-	loading: { color: '#fff' },
+	loading: false,
 	css: [
 		'~/node_modules/bootstrap/dist/css/bootstrap.min.css',
 		'~/assets/scss/global.scss',

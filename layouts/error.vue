@@ -14,6 +14,6 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
 
 @Component
 export default class ErrorLayout extends Vue {
-	@Prop() error
+	@Prop() error: any
 }
 </script>

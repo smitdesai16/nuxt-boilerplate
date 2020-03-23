@@ -46,6 +46,7 @@ export default {
 		{ Sitemap: 'http://localhost:3000/sitemap.xml' }
 	],
 	sitemap: {
+		hostname: 'http://localhost:3333',
 		routes: [
 			{
 				url: '/',

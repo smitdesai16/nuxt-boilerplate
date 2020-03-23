@@ -16,3 +16,13 @@ export default class DefaultLayout extends Vue {
 
 }
 </script>
+
+<style lang="scss">
+html.wf-opensans-n4-active body {
+	font-family: 'Open Sans';
+}
+
+html.wf-barlow-n6-active h1 {
+	font-family: 'Barlow';
+}
+</style>

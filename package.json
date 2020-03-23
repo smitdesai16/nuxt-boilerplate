@@ -29,7 +29,6 @@
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/style-resources": "^1.0.0",
-    "bootstrap": "^4.4.1",
     "nuxt": "^2.0.0",
     "nuxt-property-decorator": "^2.5.1",
     "nuxt-webfontloader": "^1.1.0",

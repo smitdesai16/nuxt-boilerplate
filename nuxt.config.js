@@ -9,18 +9,14 @@ export default {
 			{ hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
 		],
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+			{ rel: 'preload', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css', as: 'style', onload: 'this.onload=null;this.rel="stylesheet"' }
 		],
 		htmlAttrs: {
 			lang: 'en'
 		}
 	},
 	loading: false,
-	css: [
-		'~/node_modules/bootstrap/dist/css/bootstrap.min.css',
-		'~/assets/scss/global.scss',
-		'~/assets/scss/fonts.scss'
-	],
 	plugins: [
 		'@/plugins/vue_lazyload'
 	],

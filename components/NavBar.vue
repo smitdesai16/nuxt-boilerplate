@@ -17,7 +17,7 @@
 				>
 					<span class="navbar-toggler-icon" />
 				</button>
-				<div id="navbarNav" class="collapse navbar-collapse" :class="{ 'show': navbarExpand }">
+				<div id="navbarNav" class="collapse navbar-collapse" :class="{ 'show': getNavbarExpand }">
 					<ul class="navbar-nav">
 						<li class="nav-item">
 							<nuxt-link to="/" class="nav-link">
@@ -47,19 +47,16 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
 export default class NavBar extends Vue {
-	navbarExpand: boolean;
-
-	constructor() {
-		super()
-		this.navbarExpand = false
-	}
-
 	toggleNavBar() {
-		this.navbarExpand = !this.navbarExpand
+		this.$store.dispatch('navbar/setNavBarStatus', !this.$store.getters['navbar/getNavBarStatus'])
 	}
 
 	closeNavBar() {
-		this.navbarExpand = false
+		this.$store.dispatch('navbar/setNavBarStatus', false)
+	}
+
+	get getNavbarExpand() {
+		return this.$store.getters['navbar/getNavBarStatus']
 	}
 }
 </script>

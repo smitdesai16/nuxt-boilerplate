@@ -66,5 +66,10 @@ export default {
 	},
 	styleResources: {
 		scss: ['assets/scss/colors.scss']
+	},
+	router: {
+		middleware: [
+			'navbar_middleware'
+		]
 	}
 }

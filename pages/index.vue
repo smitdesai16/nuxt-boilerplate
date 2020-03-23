@@ -1,14 +1,9 @@
-/* eslint-disable no-debugger */
-/* eslint-disable no-console */
 <template>
-	<div class="container">
+	<div class="container-xl">
 		<div class="row">
 			<div class="col-12">
-				<button>
-					Click
-				</button>
 				<h1>
-					Index : {{ ip }}
+					Index {{ ip }}
 				</h1>
 			</div>
 		</div>

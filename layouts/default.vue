@@ -1,19 +1,17 @@
 <template>
 	<div>
-		<nuxt-link to="/">
-			home
-		</nuxt-link>
-		<nuxt-link to="/about">
-			about
-		</nuxt-link>
+		<NavBar />
 		<nuxt />
 	</div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import NavBar from '@/components/NavBar.vue'
 
-@Component
+@Component({
+	components: { NavBar }
+})
 export default class DefaultLayout extends Vue {
 
 }

@@ -1,0 +1,78 @@
+<template>
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container-xl bg-dark">
+				<nuxt-link to="/" class="navbar-brand">
+					Navbar
+				</nuxt-link>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+					@click="toggleNavBar"
+				>
+					<span class="navbar-toggler-icon" />
+				</button>
+				<div id="navbarNav" class="collapse navbar-collapse" :class="{ 'show': navbarExpand }">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<nuxt-link to="/" class="nav-link">
+								Home
+							</nuxt-link>
+						</li>
+						<li class="nav-item">
+							<nuxt-link to="/about" class="nav-link">
+								About
+							</nuxt-link>
+						</li>
+						<li class="nav-item">
+							<nuxt-link to="/contact" class="nav-link">
+								Contact
+							</nuxt-link>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="navbar-margin-fix" />
+	</div>
+</template>
+
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component
+export default class NavBar extends Vue {
+	navbarExpand: boolean;
+
+	constructor() {
+		super()
+		this.navbarExpand = false
+	}
+
+	toggleNavBar() {
+		this.navbarExpand = !this.navbarExpand
+	}
+}
+</script>
+
+<style lang="scss" scoped>
+.container-xl {
+	padding: 0;
+}
+
+.navbar-margin-fix {
+	margin-bottom: 71px;
+}
+
+@media (min-width: 1200px) {
+	.container-xl {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+</style>

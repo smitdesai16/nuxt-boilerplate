@@ -1,7 +1,5 @@
-/* eslint-disable no-debugger */
-/* eslint-disable no-console */
 <template>
-	<div class="container">
+	<div class="container-xl">
 		<div class="row">
 			<div class="col-12">
 				<h1>

@@ -18,6 +18,7 @@ export default {
 	loading: { color: '#fff' },
 	css: [
 		'~/node_modules/bootstrap/dist/css/bootstrap.min.css',
+		'~/assets/scss/global.scss',
 		'~/assets/scss/fonts.scss'
 	],
 	plugins: [

@@ -18,7 +18,8 @@ export default {
 	},
 	loading: false,
 	plugins: [
-		'@/plugins/vue_lazyload'
+		'@/plugins/vue_lazyload',
+		'@/plugins/v_click_outside'
 	],
 	buildModules: [
 		'@nuxt/typescript-build',

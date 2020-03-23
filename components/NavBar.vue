@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<header v-click-outside="closeNavBar">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container-xl bg-dark">
 				<nuxt-link to="/" class="navbar-brand">
@@ -39,7 +39,7 @@
 			</div>
 		</nav>
 		<div class="navbar-margin-fix" />
-	</div>
+	</header>
 </template>
 
 <script lang="ts">
@@ -56,6 +56,10 @@ export default class NavBar extends Vue {
 
 	toggleNavBar() {
 		this.navbarExpand = !this.navbarExpand
+	}
+
+	closeNavBar() {
+		this.navbarExpand = false
 	}
 }
 </script>

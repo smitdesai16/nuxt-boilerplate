@@ -1,7 +1,7 @@
 {
   "name": "nuxt-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is package description",
   "author": "Smit Desai",
   "private": true,
   "scripts": {

@@ -24,6 +24,15 @@ export default class IndexPage extends Vue {
 			return new IP('not found')
 		}
 	}
+
+	head() {
+		return {
+			title: 'Smit Desai',
+			meta: [
+				{ hid: 'description', name: 'description', content: 'My custom description' }
+			]
+		}
+	}
 }
 </script>
 

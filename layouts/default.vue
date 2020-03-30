@@ -20,11 +20,15 @@ export default class DefaultLayout extends Vue {
 </script>
 
 <style lang="scss">
-html.wf-opensans-n4-active body {
-	font-family: 'Open Sans';
+html.wf-josefinsans-n4-active {
+	body {
+		font-family: 'Josefin Sans';
+	}
 }
 
-html.wf-barlow-n6-active h1 {
-	font-family: 'Barlow';
+html.wf-arvo-n7-active {
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		font-family: 'Arvo';
+	}
 }
 </style>

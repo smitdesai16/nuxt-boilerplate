@@ -61,7 +61,7 @@ export default {
 	},
 	webfontloader: {
 		google: {
-			families: ['Barlow:600', 'Open Sans:400&display=swap']
+			families: ['Arvo:700', 'Josefin Sans:400&display=swap']
 		}
 	},
 	styleResources: {

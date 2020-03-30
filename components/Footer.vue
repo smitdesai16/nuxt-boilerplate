@@ -3,8 +3,12 @@
 		<div class="row">
 			<div class="col-4">
 				<h3>asd</h3>
-				<ul>
-					<li>asd</li>
+				<ul class="list-unstyled">
+					<li>
+						<nuxt-link to="/">
+							Home
+						</nuxt-link>
+					</li>
 				</ul>
 			</div>
 			<div class="col-4">
@@ -19,8 +23,17 @@
 				Logo here
 			</div>
 			<div class="col-md-6 text-center text-md-right">
-				@2019 - 2020 Localhost &reg;
+				@2019 - {{ new Date().getFullYear() }} Localhost &reg;
 			</div>
 		</div>
 	</footer>
 </template>
+
+<script lang="ts">
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component
+export default class Footer extends Vue {
+
+}
+</script>

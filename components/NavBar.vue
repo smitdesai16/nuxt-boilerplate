@@ -1,7 +1,7 @@
 <template>
 	<header v-click-outside="closeNavBar">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<div class="container-xl bg-dark">
+		<nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+			<div class="container-xl">
 				<nuxt-link to="/" class="navbar-brand">
 					Navbar
 				</nuxt-link>

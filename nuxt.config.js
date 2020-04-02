@@ -57,7 +57,7 @@ export default {
 	axios: {
 	},
 	env: {
-		DEMO: 'data'
+		PROJECT_START_YEAR: 2019
 	},
 	webfontloader: {
 		google: {

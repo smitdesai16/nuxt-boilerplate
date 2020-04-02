@@ -5,6 +5,7 @@
 				<h1>
 					Index {{ address }}
 				</h1>
+				<p>{{ baseUrl }}</p>
 			</div>
 		</div>
 	</div>
@@ -16,6 +17,13 @@ import IP from '@/model/ip'
 
 @Component
 export default class IndexPage extends Vue {
+	baseUrl: string | undefined
+
+	constructor() {
+		super()
+		this.baseUrl = process.env.BASE_URL
+	}
+
 	async asyncData({ $axios } : { $axios: any; }) {
 		try {
 			const address = await $axios.$get('http://icanhazip.com', { timeout: 1000 })

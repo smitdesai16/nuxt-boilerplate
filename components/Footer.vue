@@ -23,7 +23,7 @@
 				Logo here
 			</div>
 			<div class="col-md-6 text-center text-md-right">
-				@2019 - {{ new Date().getFullYear() }} Localhost &reg;
+				@{{ projectStartYear }} - {{ new Date().getFullYear() }} Localhost &reg;
 			</div>
 		</div>
 	</footer>
@@ -34,6 +34,11 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
 export default class Footer extends Vue {
+	projectStartYear: string | undefined
 
+	constructor() {
+		super()
+		this.projectStartYear = process.env.PROJECT_START_YEAR
+	}
 }
 </script>

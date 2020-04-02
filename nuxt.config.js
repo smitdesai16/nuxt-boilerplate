@@ -32,7 +32,8 @@ export default {
 		'@nuxtjs/axios',
 		'@nuxtjs/dotenv',
 		'nuxt-webfontloader',
-		'@nuxtjs/style-resources'
+		'@nuxtjs/style-resources',
+		'nuxt-purgecss'
 	],
 	build: {
 		extend() {
@@ -78,5 +79,8 @@ export default {
 			lang: 'en',
 			theme_color: '#f00'
 		}
+	},
+	purgeCSS: {
+		mode: 'postcss'
 	}
 }

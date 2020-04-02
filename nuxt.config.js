@@ -72,7 +72,8 @@ export default {
 	},
 	router: {
 		middleware: [
-			'navbar_middleware'
+			'navbar_middleware',
+			'ga_middleware'
 		]
 	},
 	pwa: {
@@ -96,6 +97,6 @@ export default {
 		}
 	},
 	gtm: {
-		id: 'GTM-XXXXXXX'
+		id: 'GTM-M4VZWL3'
 	}
 }

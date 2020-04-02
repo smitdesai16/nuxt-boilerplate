@@ -28,7 +28,7 @@ export default class IndexPage extends Vue {
 
 	async asyncData({ $axios } : { $axios: any; }) {
 		try {
-			const address = await $axios.$get('http://icanhazip.com', { timeout: 1000 })
+			const address = await $axios.$get('https://icanhazip.com', { timeout: 1000 })
 			return new IP(address)
 		} catch (exception) {
 			return new IP('not found')

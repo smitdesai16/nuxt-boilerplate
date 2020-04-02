@@ -23,7 +23,8 @@ export default {
 	],
 	buildModules: [
 		'@nuxt/typescript-build',
-		'@nuxtjs/stylelint-module'
+		'@nuxtjs/stylelint-module',
+		'@nuxtjs/gtm'
 	],
 	modules: [
 		'@nuxtjs/pwa',
@@ -93,5 +94,8 @@ export default {
 			lg: 1200,
 			xl: Infinity
 		}
+	},
+	gtm: {
+		id: 'GTM-XXXXXXX'
 	}
 }

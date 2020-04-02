@@ -33,7 +33,8 @@ export default {
 		'@nuxtjs/dotenv',
 		'nuxt-webfontloader',
 		'@nuxtjs/style-resources',
-		'nuxt-purgecss'
+		'nuxt-purgecss',
+		'nuxt-mq'
 	],
 	build: {
 		extend() {
@@ -82,5 +83,15 @@ export default {
 	},
 	purgeCSS: {
 		mode: 'postcss'
+	},
+	mq: {
+		defaultBreakpoint: 'default',
+		breakpoints: {
+			xm: 576,
+			sm: 768,
+			md: 992,
+			lg: 1200,
+			xl: Infinity
+		}
 	}
 }

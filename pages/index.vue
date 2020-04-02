@@ -5,7 +5,9 @@
 				<h1>
 					Index {{ address }}
 				</h1>
-				<p>{{ baseUrl }}</p>
+				<p class="text-right text-sm-center text-md-left text-lg-center text-xl-right">
+					{{ baseUrl }} {{ $mq }}
+				</p>
 			</div>
 		</div>
 	</div>

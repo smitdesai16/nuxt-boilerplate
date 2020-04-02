@@ -1,3 +1,6 @@
-interface Window {
-	ga: Function
+export {}
+declare global {
+	interface Window {
+		ga: Function
+	}
 }

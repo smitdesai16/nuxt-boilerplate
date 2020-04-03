@@ -15,23 +15,24 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-import IP from '@/model/ip'
 
 @Component
 export default class IndexPage extends Vue {
 	baseUrl: string | undefined
+	address: string | undefined
 
 	constructor() {
 		super()
 		this.baseUrl = process.env.BASE_URL
+		this.address = ''
 	}
 
-	async asyncData({ $axios } : { $axios: any; }) {
+	async mounted() {
 		try {
-			const address = await $axios.$get('https://icanhazip.com', { timeout: 1000 })
-			return new IP(address)
+			const value = await this.$axios.$get('https://icanhazip.com', { timeout: 1000 })
+			this.address = value
 		} catch (exception) {
-			return new IP('not found')
+			this.address = 'not found'
 		}
 	}
 

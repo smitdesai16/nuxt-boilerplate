@@ -4,6 +4,7 @@ module.exports = {
 		'^~/(.*)$': '<rootDir>/$1',
 		'^vue$': 'vue/dist/vue.common.js'
 	},
+	watchman: false,
 	moduleFileExtensions: [
 		'ts',
 		'js',
@@ -18,6 +19,7 @@ module.exports = {
 	collectCoverage: true,
 	collectCoverageFrom: [
 		'<rootDir>/components/**/*.vue',
-		'<rootDir>/pages/**/*.vue'
+		'<rootDir>/pages/**/*.vue',
+		'<rootDir>/plugins/**/*.*'
 	]
 }

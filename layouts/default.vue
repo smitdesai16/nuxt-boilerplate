@@ -2,7 +2,7 @@
 	<div>
 		<NavBar />
 		<nuxt />
-		<Footer />
+		<Footer project-start-year="2020" />
 	</div>
 </template>
 

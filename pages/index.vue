@@ -27,13 +27,9 @@ export default class IndexPage extends Vue {
 		this.address = ''
 	}
 
-	async mounted() {
-		try {
-			const value = await this.$axios.$get('https://icanhazip.com', { timeout: 1000 })
-			this.address = value
-		} catch (exception) {
-			this.address = 'not found'
-		}
+	async asyncData({ app }: {app:any}) {
+		const address = await app.$getIPAddress()
+		return { address }
 	}
 
 	head() {

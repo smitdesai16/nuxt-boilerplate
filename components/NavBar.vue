@@ -1,6 +1,6 @@
 <template>
 	<header v-click-outside="closeNavBar">
-		<nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container-xl">
 				<nuxt-link to="/" class="navbar-brand">
 					Navbar
@@ -31,7 +31,7 @@
 						</li>
 						<li class="nav-item">
 							<nuxt-link to="/contact" class="nav-link">
-								Contact
+								Page Not Found
 							</nuxt-link>
 						</li>
 					</ul>

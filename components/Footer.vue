@@ -2,20 +2,13 @@
 	<footer class="container-xl bg-dark text-white">
 		<div class="row">
 			<div class="col-4">
-				<h3>asd</h3>
-				<ul class="list-unstyled">
-					<li>
-						<nuxt-link to="/">
-							Home
-						</nuxt-link>
-					</li>
-				</ul>
+				<h3>footer section 1</h3>
 			</div>
 			<div class="col-4">
-				<h3>asd</h3>
+				<h3>footer section 2</h3>
 			</div>
 			<div class="col-4">
-				<h3>asd</h3>
+				<h3>footer section 3</h3>
 			</div>
 		</div>
 		<div class="row">

@@ -19,7 +19,8 @@ export default {
 	loading: false,
 	plugins: [
 		'@/plugins/vue_lazyload',
-		'@/plugins/v_click_outside'
+		'@/plugins/v_click_outside',
+		'@/plugins/ip_address'
 	],
 	buildModules: [
 		'@nuxt/typescript-build',
@@ -38,8 +39,14 @@ export default {
 		'nuxt-mq'
 	],
 	build: {
-		extend() {
+		extractCSS: true,
+		// publicPath: https://cdn.example.com/_nuxt,
+		extend(config) {
+			config.resolve.alias.vue = 'vue/dist/vue.common'
 		}
+	},
+	eslint: {
+		fix: true
 	},
 	robots: [
 		{ UserAgent: '*' },

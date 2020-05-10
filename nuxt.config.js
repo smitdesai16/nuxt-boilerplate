@@ -36,7 +36,8 @@ export default {
 		'nuxt-webfontloader',
 		'@nuxtjs/style-resources',
 		'nuxt-purgecss',
-		'nuxt-mq'
+		'nuxt-mq',
+		'cookie-universal-nuxt'
 	],
 	build: {
 		extractCSS: true,

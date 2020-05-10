@@ -28,6 +28,10 @@ export default class IndexPage extends Vue {
 	}
 
 	async asyncData({ app }: {app:any}) {
+		app.$cookies.set('name', 'smit desai', {
+			path: '/',
+			maxAge: 60 * 60 * 24 * 7
+		})
 		const address = await app.$getIPAddress()
 		return { address }
 	}
